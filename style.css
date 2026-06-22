@@ -1,0 +1,191 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #f1f50849;
+    background-image: url(https://plus.unsplash.com/premium_photo-1667868018725-36d4a1f32922?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJhc2lsfGVufDB8fDB8fHww);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    opacity: 100%
+}
+
+    div.container {
+    text-align: center;
+    color: #000000;
+    font-family: gergana, sans-serif;
+    font-size: 23px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid #0a0a00;
+    box-shadow: 0px 0px 10px #000000;
+    background-color: #f1f508;
+}
+
+h2{
+    text-align: center;
+    color: #000000;
+    font-family: gergana, sans-serif;
+    font-size: 20px;
+}
+
+.lara-score {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f1f508;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.filipi-score {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f1f508;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.lara-score input, .filipi-score input {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0106188e;
+    color: white;
+    cursor: pointer;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.vs {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Ajustes para tablets e celulares maiores */
+@media (max-width: 768px) {
+    div.container {
+        width: 90%;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .scoreboard {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .lara-score,
+    .filipi-score {
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+/* Ajustes para celulares menores */
+@media (max-width: 480px) {
+    div.container {
+        width: 95%;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .lara-score,
+    .filipi-score {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+    .lara-score input,
+    .filipi-score input {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 4px;
+    }
+
+    .vs {
+        font-size: 22px;
+    }
+
+
+@media (max-width: 480px) {
+    div.container {
+        width: 95%;
+        font-size: 16px;
+        margin: 10px auto;
+        border-radius: 6px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .scoreboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .lara-score,
+    .filipi-score {
+        width: 80%;
+        max-width: 280px;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .vs {
+        font-size: 22px;
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .lara-score input,
+    .filipi-score input {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 4px;
+    }
+.reset-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #b22222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #8b0000;
+ }
+}

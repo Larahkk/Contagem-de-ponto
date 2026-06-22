@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de Ponto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Placar do Casal</h1>
+    </div>
+   <div class="instructions">
+    <p>Para começar a contar seus pontos, siga as instruções abaixo:</p>
+   </div>
+        <ol>
+            <strong><li>Acertou a pontuação exata = 3 pontos.</li>
+            <li>Acertou o time vencedor = 1 ponto.</li>
+            <li>Não acertou o resultado = 0 pontos.</li>
+        </ol>
+
+       <h2>LARA X FILIPI</h2>
+<div class="scoreboard">
+    <div class="lara-score">
+        <h4>Lara</h4>
+        <h1>0</h1>
+        <input type="button" value="+" onclick="incrementScore('lara')">
+        <input type="button" value="-" onclick="decrementScore('lara')">
+    </div>
+
+    <p class="vs">VS</p>
+
+    <div class="filipi-score">
+        <h4>Filipi</h4>
+        <h1>0</h1>
+        <input type="button" value="+" onclick="incrementScore('filipi')">
+        <input type="button" value="-" onclick="decrementScore('filipi')">
+    </div>
+    <button class="reset-btn" onclick="resetScore()">Zerar Placar</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
